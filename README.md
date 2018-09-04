@@ -4,25 +4,28 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/f89421f12fd5fbc684ac/maintainability)](https://codeclimate.com/github/bilfar/blockchain-backend-ruby/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/f89421f12fd5fbc684ac/test_coverage)](https://codeclimate.com/github/bilfar/blockchain-backend-ruby/test_coverage)
 
-This repository represents the back-end 'blockchain' element to our project, while the Javascript/React front-end repository [can be found here](https://github.com/jeff1108/blockchain-ticketing-app).
+This repository represents the back-end 'blockchain' element to our project, while the Javascript/React front-end repository [can be found here](https://github.com/dct-lau17/blockchain-ticketing-app-1).
 
 A blockchain-based ticketing app that allows users to purchase concert tickets and stores the validated transactions on a blockchain network. Created as part of our final project for the Makers Academy bootcamp during August 2018.
 
-Via the front-end, a user can fill in his or her first-name, last-name and email-address, their details are then hashed into a wallet-address. When a user buys a ticket, a transaction hash is created. The back-end creates a new transaction object, and adds the transaction to a list of unverified transactions; then it returns a transaction hash to the user. A Miner can create a new block by hashing the unverified transactions into a new block object and stores it in the blockchain.
+This repository hosts the back-end blockchain model and a 'miners' page. The back-end creates a new transaction object, and adds the transaction to a list of unverified transactions; then it returns a transaction hash to the user. A Miner can create a new block by hashing the unverified transactions into a new block object and stores it in the blockchain.
 
-You can [read our full project log here](https://hackmd.io/FugFiGBnQ0ivaJpLaANYhQ).
+[Check out our project log](https://hackmd.io/ZMK-5YXeS6u6zb0THM5F7g)
+
 
 ### Initial MVP
 * Project setup ( Trello, Github, Travis CI, Heroku, Simplecov, Linter)
 * A simple app that allows a user to see available concert tickets and make a purchase.
 * A 'dummy' blockchain built on Ruby that sends ticket transactions to a Postgres database.
 
-### Final product(Back-end)
-* Gets user data from the front-end.
-* Creates transactions and hashes it.
-* Creates a block and hashes it.
-* Sends data back to the front-end.
-* Stores the block in a blockchain.
+### Final product
+[**Watch our Ticketchain demonstration video here**](https://vimeo.com/287794015) (turn on Closed-Captions)  
+* User can enter details(via frontend application)
+* User can select a concert ticket from the songKick API
+* A new transaction hash is created in the backend and stored as an unverified transaction
+* The transaction can be verified and stored into a block inside a blockchain when a 'Miner' mines a block.
+* During the mining process a block is created with a unique hash value based on the previous block's hash and a 'nonce' calculation to replicate the proof of work concept.
+* The miner is rewarded a fix sum of 'coins' for mining this block
 
 ### User stories for miner and ticket-seller
 ```
@@ -38,8 +41,8 @@ I want my transaction to be recorded on a blockchain.
 
 ## Technologies used
 | Technologies Used | Test Suites |
-| -------- | ----------------- | ----------- |
-| Ruby, Sinatra     | Rspec, Capybara       |
+| -------- | ----------------- |
+| Ruby, Sinatra     | Rspec, Capybara   |
 
 ## To run application
 
@@ -56,10 +59,10 @@ Our Ruby back-end server needs to be run in conjunction with the web front-end. 
 ```
 
 ## Learning Outcomes
-To be completed at end of project
+[can be found here](https://github.com/dct-lau17/blockchain-ticketing-app-1)
 
 ## Future/Further Improvements
-To be completed at end of project
+[can be found here](https://github.com/dct-lau17/blockchain-ticketing-app-1)
 
 ## Authors/Credits
 * [Ben Luke Smith-Gordon](https://github.com/Ben-893)
